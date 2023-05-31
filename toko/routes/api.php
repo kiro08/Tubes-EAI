@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\merchantController;
+use App\Http\Controllers\tokoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/APImerchant', [merchantController::class,"getMerchant"]);
+Route::get('/APItoko', [tokoController::class,"getToko"]);
