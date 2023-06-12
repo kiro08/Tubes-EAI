@@ -47,7 +47,7 @@
                 type="text"
                 id="form2Example17"
                 class="form-control"
-                placeholder="Silahkan masukan nomor telpon anda..."
+                placeholder="Silahkan masukan nomor telpon..."
                 name="telpon"
                 required
               />
