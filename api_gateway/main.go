@@ -12,7 +12,7 @@ func middleToko(next http.HandlerFunc) http.HandlerFunc{
 		var auth =r.Header.Get("Authorization")
 
 		if auth != "toko"{
-			w.Write([]byte("Anda tidak memiliki akses"))
+			w.Write([]byte("maaf, Anda tidak memiliki akses"))
 			return
 		}
 		next.ServeHTTP(w,r)
@@ -24,7 +24,7 @@ func middleSuperAdmin(next http.HandlerFunc) http.HandlerFunc{
 		var auth =r.Header.Get("Authorization")
 
 		if auth != "super-admin"{
-			w.Write([]byte("Anda tidak memiliki akses"))
+			w.Write([]byte("maaf, Anda tidak memiliki akses"))
 			return
 		}
 		next.ServeHTTP(w,r)

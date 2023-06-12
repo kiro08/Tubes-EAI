@@ -1,0 +1,1 @@
+export { default } from "file:///C:/xampp/htdocs/Tubes-EAI/ui-nuxt/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

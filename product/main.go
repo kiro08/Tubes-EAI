@@ -69,7 +69,7 @@ func getDetailProduct(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(product)
 	} else {
 		// Jika produk tidak ditemukan, kirim respons error dengan pesan yang sesuai
-		errorResponse := map[string]string{"error": "Product not found"}
+		errorResponse := map[string]string{"error": "Product not found..."}
 		json.NewEncoder(w).Encode(errorResponse)
 	}
 }
